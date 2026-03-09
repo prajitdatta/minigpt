@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://static.wixstatic.com/media/68ad1b_96c952149d584505bdfc30a3cbf36795~mv2.jpg" width="120" height="120" style="border-radius: 50%;" alt="MiniGPT-Forge Logo"/>
-</p>
 
 <h1 align="center">⚡ MiniGPT-Forge</h1>
 
