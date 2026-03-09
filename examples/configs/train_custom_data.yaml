@@ -1,0 +1,34 @@
+# MiniGPT-Forge Training Configuration
+# Dataset: Custom text data
+# Template for training on your own data
+#
+# Author: Prajit Datta (https://github.com/prajitdatta)
+
+model:
+  name: custom
+  vocab_size: 50257
+  block_size: 512
+  n_layer: 8
+  n_head: 8
+  n_embd: 512
+  dropout: 0.1
+
+training:
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  learning_rate: 5.0e-4
+  weight_decay: 0.1
+  max_epochs: 30
+  warmup_steps: 500
+  grad_clip: 1.0
+  mixed_precision: true
+
+data:
+  path: data/your_data.txt  # Replace with your file
+  num_workers: 2
+  pin_memory: true
+
+logging:
+  log_interval: 10
+  eval_interval: 200
+  save_interval: 500
